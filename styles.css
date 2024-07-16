@@ -1,0 +1,164 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+
+#new-book-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+#new-book-btn:hover {
+    background-color: #0056b3;
+
+}
+
+
+#new-book-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; 
+
+}
+
+#submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+#submit:hover {
+    background-color: #218838;
+
+}
+
+#library {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.title, .author {
+    margin: 0;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.pages, .read {
+    margin: 10px 0;
+}
+.pages{
+    color: #555555;
+
+}
+.read{
+    font-weight: bold;
+    margin: 10px 0;
+    color: #28a745;
+}
+read:not(:contains("Read")) {
+    color: #dc3545; 
+}
+
+.remove-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+
+}
+
+.remove-btn:hover {
+    background-color: #e84141;
+}
+input, button {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
